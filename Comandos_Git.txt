@@ -1,0 +1,50 @@
+Comandos Git:
+
+Para inicializar el Reopositorio: git init
+
+Para validar lo que se tenga en esa carpeta: git status
+
+Para cargar todos los archivos de ese Repositorio: git add . 
+
+Para cargar solo un archivo en especifico: git add nomArchvio.php 
+
+Para enlazar la Cuenta de Correo y el Usuario: 
+git config --global user.email ovillafrancot@gmail.com 
+y 
+git config --global user.name Octavillt 
+
+Para poner un comentario u observacion de lo que se esta subiendo: git commit -m "Observación"
+
+Para editar un comentario u observacion en caso se suba por error:
+git commit --amend -m "Mensaje Editado o Actualizado" y
+git push --force
+
+Para dar la instrucción que se va a subir al Repositorio Remoto: git branch -M main
+
+Para subirlo a la ruta del proyecto Remoto: 
+git remote add origin
+https://github.com/Octavillt/Ejercicios_JavaScript.git
+
+Confirmar que se va a subir el/los archivos:
+git push -u origin main 
+
+Fusiona el archivo de tu repositorio remoto en tu repositorio local:
+git pull --all
+
+Para verificar que es lo que se ha modificado: git status
+
+Para crear una rama: git branch unaNuevaRama
+
+Para Extrae la nueva rama que acabas de crear para empezar a usarla: git checkout unaNuevaRama
+
+Si no tienes previsto seguir usando la rama , puedes eliminarla: git branch -d unaNuevaRama
+
+Para poner un comentario u observacion de lo que se esta subiendo: git commit -m "Observación"
+
+Para editar un comentario u observacion en caso se suba por error:
+git commit --amend -m "Mensaje Editado o Actualizado" y
+git push --force -> para forzar el cambio.
+
+Para fucionar una de las ramas a para el main: git checkout main  y git merge unaNuevaRama
+
+Para conseguir una secuencia de commits lineal, más bonita. El historial / log de commits del repositorio va a estar mucho más claro: git checkout unaNuevaRama y git rebase main para hacer el rebase o alcanze para el main git checkout main y git rebase unaNuevaRama 
